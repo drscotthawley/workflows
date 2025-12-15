@@ -55,7 +55,7 @@ runs:
           test -f setup.py && pip install -e ".[dev]"
         fi
         nbdev_export --procs scrub_magics
-        nbdev_docs
+        nbdev_quarto
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
